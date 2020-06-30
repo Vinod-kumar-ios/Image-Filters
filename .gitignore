@@ -22,8 +22,15 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+
+
 ## Obj-C/Swift specific
 *.hmap
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
 
 ## App packaging
 *.ipa
