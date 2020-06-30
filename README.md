@@ -1,7 +1,7 @@
 # Image-Filters
 
 > This repository is sample for applying filters on image using `Core Image`. Basically it demonstrate how filter apply 
-> on image and filter data from json. Json converted from xmp using my   [another repo XMP To Json](https://github.com/macvinod/XMP-To-Json/archive/v1.0.zip) 
+> on image and filter data from json. Json converted from xmp using my   [another repo XMP To Json](https://github.com/macvinod/XMP-To-Json) 
 >I have used some `CIFilter` and `CIColorKernel` for changing preset of image. You can find other [CIFilter](https://cifilter.io/)  or write custom filter using `CIKernel`, `Metal`.
 
 
