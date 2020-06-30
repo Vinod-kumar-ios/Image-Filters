@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XMP_On_Image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MI.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zeu-Pg-GGj">
+                                <rect key="frame" x="50" y="20" width="220" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="MCv-PM-49D"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykO-B0-d2z">
+                                <rect key="frame" x="50" y="240" width="220" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="j0L-mX-pyz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Apply XMP Filters">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnApplyFilters:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUz-6i-hVU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-pG-8aU">
+                                <rect key="frame" x="50" y="305" width="220" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="UJz-vR-U3Q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kTi-pG-8aU" secondAttribute="trailing" constant="50" id="4Ai-s8-b1J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zeu-Pg-GGj" secondAttribute="trailing" constant="50" id="KVQ-8w-s79"/>
+                            <constraint firstItem="kTi-pG-8aU" firstAttribute="top" secondItem="ykO-B0-d2z" secondAttribute="bottom" constant="20" id="QbO-N9-BJL"/>
+                            <constraint firstItem="ykO-B0-d2z" firstAttribute="leading" secondItem="Zeu-Pg-GGj" secondAttribute="leading" id="S8c-Tu-FXR"/>
+                            <constraint firstItem="ykO-B0-d2z" firstAttribute="top" secondItem="Zeu-Pg-GGj" secondAttribute="bottom" constant="20" id="VMu-I8-FOD"/>
+                            <constraint firstItem="Zeu-Pg-GGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="brz-Yc-3n4"/>
+                            <constraint firstItem="Zeu-Pg-GGj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="orx-rX-WiM"/>
+                            <constraint firstItem="ykO-B0-d2z" firstAttribute="trailing" secondItem="Zeu-Pg-GGj" secondAttribute="trailing" id="rdp-SZ-phR"/>
+                            <constraint firstItem="kTi-pG-8aU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="z47-qy-D3X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgAfterFilters" destination="kTi-pG-8aU" id="zsv-Tm-Bq1"/>
+                        <outlet property="imgOriginal" destination="Zeu-Pg-GGj" id="tG5-xH-cne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MI.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
